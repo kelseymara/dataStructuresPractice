@@ -149,31 +149,14 @@ BST.h
 <summary>BST.h code</summary>
 
 ```C++
-class BST
-{
-// basic building block of BST
-private: 
-struct node
-{
-int key;
-node *left;
-node *right;
-};
-node *root; // root pointer to reference top of tree/root node
+private:
 void addLeafPrivate(int k, node* ptr);
 
 public: 
-BST(); 
-
-node *createLeaf(int k); 
-
 void addLeaf(int k); 
-};
 ``` 
 
 </details>
-
-
 
 
 <br />
@@ -188,29 +171,6 @@ BST.cpp
 <summary>BST.cpp code</summary>
 
 ```C++
-#include <iostream>
-#include <cstdlib>
-#include "BST.h"
-
-using namespace std;
-
-BST::BST()
-{
-    root = NULL;
-
-}
- 
-// put BST twice because return type node* is defined from BST class 
-
-BST::node* BST::createLeaf(int k)
-{
-    node *n=new node;
-    n->key=k;
-    n->left=NULL;
-    n->right=NULL;
-    return n;
-}
-
 // all you want it to do is call addLeafPrivate function
 // need this for when calling from main
 // starts at root 
