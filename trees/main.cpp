@@ -37,5 +37,24 @@ int main()
 
     cout << "The smallest value in the tree is " << myTree.findSmallest() << endl;
     
+
+    int input=0;
+
+while(input!=-1)
+{
+    cout << "Delete Node: ";
+    cin >> input;
+    {
+        if(input !=-1)
+        {
+            cout << endl;
+            myTree.removeNode(input);
+            // print remaining contents of tree
+            myTree.printInOrder();
+            cout << endl;
+        }
+    }
+}
+
     return 0;
 }

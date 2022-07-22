@@ -19,6 +19,13 @@ node* returnNodePrivate(int k,node *ptr);
 
 int findSmallestPrivate(node *ptr);
 
+void removeRootMatch();
+
+
+void removeNodePrivate(int k,node *parent);
+
+void removeMatch(node *parent, node *match, bool left);
+
 public: 
 BST(); 
 node *createLeaf(int k); 
@@ -31,6 +38,8 @@ node* returnNode(int k);
 
 int returnRootKey();
 void printChildren(int k);
+
+void removeNode(int k);
 
 int findSmallest();
 };

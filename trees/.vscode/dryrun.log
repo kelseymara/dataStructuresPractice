@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/kelseymarantan/Desktop/CS361/dataStructuresPractice/trees'
+g++ main.o BST.o -o output
+make: Leaving directory `/Users/kelseymarantan/Desktop/CS361/dataStructuresPractice/trees'
+ 
