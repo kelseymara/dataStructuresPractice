@@ -1,5 +1,5 @@
 # Codewars challenges on strings
-Contains challenges did on Codewars about strings
+Contains challenges I did on Codewars about Strings
 
 ## Split Strings
 Complete the solution so that it splits the string into pairs of two characters. If the string contains an odd number of characters then it should replace the missing second character of the final pair with an underscore ('_').
@@ -37,4 +37,28 @@ std::vector<std::string> solution(const std::string &s)
     }
     return result;
 }
-```S
+```
+## Vowel Count
+Return the number (count) of vowels in the given string.
+
+We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+The input string will only consist of lower case letters and/or spaces.
+
+### My Solution
+```C++
+#include <string>
+
+using namespace std;
+
+int getCount(const string& inputStr){
+  int num_vowels = 0;
+  for(char c: inputStr)
+    {
+    if (c==('a') || c == ('e') || c== ('i')|| c==('o') || c==('u')){
+      num_vowels++;
+    }
+  }
+  return num_vowels;
+}
+```
